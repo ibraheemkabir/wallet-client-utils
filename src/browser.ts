@@ -1,5 +1,4 @@
 import { IClientMeta } from "@walletconnect/types";
-import * as windowMetadata from "window-metadata";
 import * as Device from 'expo-device';
 
 export function detectOS() {
@@ -28,30 +27,35 @@ export function isBrowser(): boolean {
   return result;
 }
 
-export const getFromWindow = undefined;
 
-export const getFromWindowOrThrow = undefined;
+export function getWindow() {
+  return undefined;
+}
 
-export const getDocumentOrThrow = undefined;
+export const getFromWindow = getWindow();
 
-export const getDocument = undefined;
+export const getFromWindowOrThrow = getWindow();
 
-export const getNavigatorOrThrow = undefined;
+export const getDocumentOrThrow = getWindow();
 
-export const getNavigator = undefined;
+export const getDocument = getWindow();
 
-export const getLocationOrThrow = undefined;
+export const getNavigatorOrThrow = getWindow();
 
-export const getLocation = undefined;
+export const getNavigator = getWindow();
 
-export const getCryptoOrThrow = undefined;
+export const getLocationOrThrow = getWindow();
 
-export const getCrypto = undefined;
+export const getLocation = getWindow();
 
-export const getLocalStorageOrThrow = undefined;
+export const getCryptoOrThrow = getWindow();
 
-export const getLocalStorage = undefined;
+export const getCrypto = getWindow();
 
-export function getClientMeta(): IClientMeta | null {
-  return windowMetadata.getWindowMetadata();
+export const getLocalStorageOrThrow = getWindow();
+
+export const getLocalStorage = getWindow();
+
+export function getClientMeta(): IClientMeta | undefined {
+  return undefined;
 }

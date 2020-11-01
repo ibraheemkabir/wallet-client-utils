@@ -1,0 +1,21 @@
+import { IClientMeta } from "@walletconnect/types";
+export declare function detectOS(): string | undefined;
+export declare function isIOS(): boolean;
+export declare function isMobile(): boolean;
+export declare function isNode(): boolean;
+export declare function isBrowser(): boolean;
+export declare function getWindow(): undefined;
+export declare const getFromWindow: undefined;
+export declare const getFromWindowOrThrow: undefined;
+export declare const getDocumentOrThrow: undefined;
+export declare const getDocument: undefined;
+export declare const getNavigatorOrThrow: undefined;
+export declare const getNavigator: undefined;
+export declare const getLocationOrThrow: undefined;
+export declare const getLocation: undefined;
+export declare const getCryptoOrThrow: undefined;
+export declare const getCrypto: undefined;
+export declare const getLocalStorageOrThrow: undefined;
+export declare const getLocalStorage: undefined;
+export declare function getClientMeta(): IClientMeta | undefined;
+//# sourceMappingURL=browser.d.ts.map

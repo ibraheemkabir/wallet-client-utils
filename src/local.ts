@@ -1,18 +1,18 @@
 import { safeJsonParse, safeJsonStringify } from "./misc";
-import { getLocalStorage } from "./browser";
+import { AsyncStorage } from 'react-native';
 
 export function setLocal(key: string, data: any): void {
   const raw = safeJsonStringify(data);
-  const local = getLocalStorage();
+  const local = AsyncStorage();
   if (local) {
-    local.setItem(key, raw);
+    local?.setItem(key, raw);
   }
 }
 
 export function getLocal(key: string): any {
   let data: any = null;
   let raw: string | null = null;
-  const local = getLocalStorage();
+  const local = AsyncStorage();
   if (local) {
     raw = local.getItem(key);
   }
@@ -21,7 +21,7 @@ export function getLocal(key: string): any {
 }
 
 export function removeLocal(key: string): void {
-  const local = getLocalStorage();
+  const local = AsyncStorage();
   if (local) {
     local.removeItem(key);
   }
