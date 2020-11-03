@@ -34,5 +34,8 @@
     "suppressImplicitAnyIndexErrors": true,
     "target": "es2017"
   },
+  "paths": {
+    "tslib" : ["./node_modules/tslib/tslib.d.ts"]
+  },
   "include": ["./src/**/*"]
 }

@@ -32,18 +32,18 @@ function getWindow() {
     return undefined;
 }
 exports.getWindow = getWindow;
-exports.getFromWindow = getWindow();
-exports.getFromWindowOrThrow = getWindow();
-exports.getDocumentOrThrow = getWindow();
-exports.getDocument = getWindow();
-exports.getNavigatorOrThrow = getWindow();
-exports.getNavigator = getWindow();
-exports.getLocationOrThrow = getWindow();
-exports.getLocation = getWindow();
-exports.getCryptoOrThrow = getWindow();
-exports.getCrypto = getWindow();
-exports.getLocalStorageOrThrow = getWindow();
-exports.getLocalStorage = getWindow();
+exports.getFromWindow = getWindow;
+exports.getFromWindowOrThrow = getWindow;
+exports.getDocumentOrThrow = getWindow;
+exports.getDocument = getWindow;
+exports.getNavigatorOrThrow = getWindow;
+exports.getNavigator = getWindow;
+exports.getLocationOrThrow = getWindow;
+exports.getLocation = getWindow;
+exports.getCryptoOrThrow = getWindow;
+exports.getCrypto = getWindow;
+exports.getLocalStorageOrThrow = getWindow;
+exports.getLocalStorage = getWindow;
 function getClientMeta() {
     return undefined;
 }

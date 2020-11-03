@@ -32,29 +32,29 @@ export function getWindow() {
   return undefined;
 }
 
-export const getFromWindow = getWindow();
+export const getFromWindow = getWindow;
 
-export const getFromWindowOrThrow = getWindow();
+export const getFromWindowOrThrow = getWindow;
 
-export const getDocumentOrThrow = getWindow();
+export const getDocumentOrThrow = getWindow;
 
-export const getDocument = getWindow();
+export const getDocument = getWindow;
 
-export const getNavigatorOrThrow = getWindow();
+export const getNavigatorOrThrow = getWindow;
 
-export const getNavigator = getWindow();
+export const getNavigator = getWindow;
 
-export const getLocationOrThrow = getWindow();
+export const getLocationOrThrow = getWindow;
 
-export const getLocation = getWindow();
+export const getLocation = getWindow;
 
-export const getCryptoOrThrow = getWindow();
+export const getCryptoOrThrow = getWindow;
 
-export const getCrypto = getWindow();
+export const getCrypto = getWindow;
 
-export const getLocalStorageOrThrow = getWindow();
+export const getLocalStorageOrThrow = getWindow;
 
-export const getLocalStorage = getWindow();
+export const getLocalStorage = getWindow;
 
 export function getClientMeta(): IClientMeta | undefined {
   return undefined;

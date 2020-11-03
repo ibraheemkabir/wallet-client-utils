@@ -1,28 +1,29 @@
 import { safeJsonParse, safeJsonStringify } from "./misc";
-import { AsyncStorage } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export function setLocal(key: string, data: any): void {
+export async function setLocal(key: string, data: any): Promise<void> {
   const raw = safeJsonStringify(data);
-  const local = AsyncStorage();
-  if (local) {
-    local?.setItem(key, raw);
+  try {
+    await AsyncStorage.setItem(key, raw);
+  } catch (e) {
+    throw e
   }
 }
 
-export function getLocal(key: string): any {
+export async function getLocal(key: string): Promise<any> {
   let data: any = null;
   let raw: string | null = null;
-  const local = AsyncStorage();
+  const local = AsyncStorage;
   if (local) {
-    raw = local.getItem(key);
+    raw = await local.getItem(key);
   }
   data = safeJsonParse(raw);
   return data;
 }
 
-export function removeLocal(key: string): void {
-  const local = AsyncStorage();
+export async function removeLocal(key: string): Promise<void> {
+  const local = AsyncStorage;
   if (local) {
-    local.removeItem(key);
+    await local.removeItem(key);
   }
 }
